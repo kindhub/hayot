@@ -1,0 +1,534 @@
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+@import "./../modules/nav";
+
+// BREAKPOINT LAPTOP
+@media (max-width: $ss_laptop) {
+	.container {
+		max-width: 880px;
+	}
+
+	.wrapper {
+		font-size: 16px;
+	}
+
+	.title {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.header {
+		padding: 25px 0;
+		
+		&__inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center
+		}
+		&__link{
+			margin: 0;
+			&-web{
+				display: none;
+			}
+		}
+	}
+	@include nav-module($color_primary, #fff);
+	.nav {
+		order: 3;
+		display: flex;
+		flex-direction: column;
+		z-index: 30;
+
+		& a {
+			color: #fff;
+		}
+
+		&-item {
+			background: none;
+
+
+			&+& {
+				margin-left: 0;
+			}
+
+			&::after {
+				display: none;
+			}
+
+			&:hover,
+			&:focus {
+				background: none;
+				color: #fff;
+			}
+
+			&--page {
+				display: none;
+			}
+		}
+	}
+	.first-screen {
+		&__inner {
+			height: 325px;
+		}
+
+		&__title {
+			font-size: 32px;
+			line-height: 36px;
+		}
+
+		&__text {
+			margin-top: 15px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+
+	.mission {
+		&__text {
+			font-size: 34px;
+			line-height: 40px;
+		}
+
+		&__cards {
+			margin-top: 46px;
+		}
+
+		&__card {
+			padding: 26px;
+		}
+
+		&__card-title {
+			font-size: 34px;
+			line-height: 38px;
+		}
+
+		&__card-text {
+			font-size: 18px;
+			line-height: 26px;
+			margin-top: 10px;
+		}
+	}
+
+	.social {
+		&__links img {
+			width: 34px;
+			height: 34px;
+		}
+	}
+
+	.values {
+		&__card {
+			padding: 25px;
+
+			&-img {
+				width: 142px;
+			}
+
+			&-title {
+				font-size: 30px;
+				line-height: 36px;
+			}
+
+			&-text {
+				font-size: 16px;
+				line-height: 22px;
+			}
+		}
+	}
+
+	.cool {
+		&__card {
+
+			&:nth-child(1),
+			&:nth-child(2) {
+				height: 450px;
+			}
+		}
+	}
+
+	.atmosphere {
+		&__text {
+			font-size: 20px;
+		}
+
+		&-progress__slider-pagination {
+			max-width: 80%;
+			transform: translate(60px, -20px);
+		}
+
+		&-bg__slider-pagination {
+			width: 80%;
+			transform: translate(60px, -20px);
+		}
+	}
+}
+
+// BREAKPOINT TABLET
+@media (max-width: $ss_tablet) {
+	.wrapper {
+		font-size: 15px;
+	}
+
+	.container {
+		padding: 0 15px;
+	}
+
+	.title {
+		margin-bottom: 30px;
+	}
+	
+	.first-screen {
+		&__inner {
+			height: 300px;
+			gap: 0;
+			padding-left: 25px;
+		}
+
+		&__content {
+			width: 45%;
+		}
+
+		&__title {
+			font-size: 26px;
+			line-height: 30px;
+		}
+
+		&__text {
+			margin-top: 10px;
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+
+	.mission {
+		&__text {
+			font-size: 26px;
+			line-height: 32px;
+		}
+
+		&__cards {
+			margin-top: 40px;
+			gap: 20px;
+		}
+
+		&__card {
+			width: 100%;
+		}
+	}
+
+	.tab {
+		width: 100%;
+
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4),
+		&:nth-child(5),
+		&:nth-child(6) {
+			margin-top: 15px;
+		}
+
+		&-title {
+			font-size: 24px;
+
+			& br {
+				display: none;
+			}
+		}
+	}
+
+	.social {
+		&__links {
+			gap: 14px;
+		}
+	}
+
+	.values {
+		&__inner {
+			justify-content: center;
+			gap: 20px;
+			text-align: center;
+		}
+
+		&__card {
+			width: 100%;
+
+			&-img {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.cool {
+		&__card {
+			padding: 10px;
+
+			&:nth-child(1) {
+				width: 59%;
+				height: 400px;
+			}
+
+			&:nth-child(2) {
+				width: 39%;
+				height: 400px;
+			}
+
+			&:nth-child(3) {
+				width: 35%;
+				margin-top: 14px;
+				height: 400px;
+			}
+
+			&:nth-child(4) {
+				width: 63%;
+				margin-top: 14px;
+				height: 400px;
+			}
+
+			&-content {
+				padding: 9px;
+			}
+
+			&-title {
+				font-size: 14px;
+				line-height: 16px;
+			}
+
+			&-text {
+				margin-top: 8px;
+				font-size: 13px;
+				line-height: 16px;
+			}
+		}
+	}
+
+	.direction {
+		&__inner {
+			gap: 20px;
+		}
+
+		&__card {
+			width: 100%;
+			padding: 40px;
+
+			&:nth-child(3),
+			&:nth-child(4) {
+				margin-top: 0px;
+			}
+		}
+	}
+
+	.atmosphere {
+		&__text {
+			font-size: 16px;
+		}
+
+		&-progress__slider-pagination {
+			max-width: 80%;
+			transform: translate(40px, -20px);
+		}
+
+		&-bg__slider-pagination {
+			width: 80%;
+			transform: translate(40px, -20px);
+		}
+	}
+
+	.join-team {
+		&__inner {
+			margin-top: 36px;
+			gap: 20px;
+		}
+
+		&__card {
+			width: 100%;
+
+			&:nth-child(3),
+			&:nth-child(4) {
+				margin-top: 0px;
+			}
+		}
+	}
+}
+
+// BREAKPOINT SM TABLET
+@media (max-width: $ss_sm_tablet) {
+	.wrapper {
+		font-size: 14px;
+	}
+	.header__link-logo{
+		width: 170px;
+		height: 30px;
+	}
+	.first-screen {
+		&__inner {
+			flex-wrap: wrap;
+			height: auto;
+			padding: 40px 40px 0;
+			gap: 30px;
+		}
+
+		&__content {
+			width: 100%;
+		}
+		&__img-wrapper {
+			width: 100%;
+		}
+		&__text {
+			margin-top: 20px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+	.mission {
+		&__text {
+			font-size: 23px;
+			line-height: 30px;
+			text-align: center;
+		}
+
+		&__card-title {
+			font-size: 28px;
+			line-height: 34px;
+		}
+
+		&__card-text {
+			margin-top: 10px;
+		}
+	}
+	.social {
+		&__text {
+			width: 100%;
+		}
+		&__links {
+			margin-top: 20px;
+			justify-content: space-between;
+			gap: 20px;
+		}
+	}
+	.atmosphere{
+		&__slider {
+			margin-top: 24px;
+		}
+		&-progress__slider-pagination {
+			max-width: 74%;
+			transform: translate(40px, -20px);
+		}
+		&-bg__slider-pagination {
+			width: 74%;
+			transform: translate(40px, -20px);
+		}
+	}
+}
+
+// BREAKPOINT PHONE
+@media (max-width: $ss_phone) {
+	.wrapper {
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+	.first-screen {
+		&__inner {
+			padding: 25px 25px 0;
+			gap: 20px;
+		}
+		&__text {
+			margin-top: 10px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+	.mission {
+		&__card {
+			padding: 15px;
+		}
+
+		&__card-text {
+			line-height: 22px;
+			font-size: 16px;
+		}
+	}
+	.tab {
+		padding: 14px 10px;
+		&-title {
+			font-size: 20px;
+			width: 80%;
+			line-height: 28px;
+		}
+		&-btn {
+			width: 15px;
+			height: 15px;
+			top: 30%;
+			right: -60px;
+		}
+	}
+	.title {
+		font-size: 28px;
+		line-height: 34px;
+		margin-bottom: 20px;
+	}
+	.cool {
+		&__inner {
+			gap: 20px;
+		}
+		&__card {
+			padding: 10px;
+			width: 100% !important;
+			margin-top: 0 !important;
+		}
+	}
+	.direction {
+		&__card {
+			padding: 30px;
+			&-title {
+				font-size: 28px;
+				line-height: 34px;
+			}
+			&-text {
+				margin-top: 18px;
+			}
+			&-img {
+				width: auto;
+				height: auto;
+			}
+			&-btn {
+				width: 100%;
+			}
+		}
+	}
+	.atmosphere{
+		&__slider {
+			margin-top: 24px;
+			&-control {
+				margin-top: 15px;
+			}
+		}
+		&-progress__slider-pagination {
+			max-width: 60%;
+			left: 15%;
+			transform: translate(0px, -18px);
+		}
+		&-bg__slider-pagination {
+			width: 60%;
+			left: 15%;
+			transform: translate(0px, -18px);
+		}
+	}
+	.join-team {
+		&__card {
+			padding: 20px;
+	
+			&-title {
+				font-size: 24px;
+				line-height: 28px;
+	
+				& span {
+					padding: 2px 15px;
+					font-size: 18px;
+				}
+			}
+	
+			&-text {
+				margin-top: 10px;
+			}
+		}
+	}
+}

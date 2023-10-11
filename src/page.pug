@@ -1,0 +1,254 @@
+extends ./pug/layout
+
+block content
+	<!-- START HEADER -->
+	.section.header
+		.container
+			.header__inner
+				.header__link
+					.header__link-logo
+						img(src="https://hhcdn.ru/ichameleon/308175.svg")
+					a.header__link-web(href="https://www.hayotbank.uz" target="_blank") www.hayotbank.uz
+				.header__nav.nav
+					a.nav__item.anchor(href="#about") О компании
+					a.nav__item.anchor(href="#mission") Миссия и ценности
+					a.nav__item.anchor(href="#direct") Направление работы
+					a.nav__item.anchor(href="#join") Как попасть к нам?
+					a.nav__item.nav__item--web(href="https://www.hayotbank.uz" target="_blank") www.hayotbank.uz
+					a.nav__item.vacancy-btn Открытые вакансии
+				+nav-btn
+	<!-- END HEADER -->
+
+	<!-- START FIRST-SCREEN -->
+	.section.first-screen 
+		.container 
+			.first-screen__inner 
+				.first-screen__content 
+					.first-screen__title Синергия таланта и опыта
+					.first-screen__text 
+						p Карьера в цифровом банке — это не просто работа, это путь к профессиональному росту. Развивайте свои навыки в инновационной среде, где ценятся инициатива и стремление к совершенству. Воплощайте свои амбиции, реализуйте свой потенциал и добивайтесь успеха вместе с нами.
+				.first-screen__img-wrapper 
+					img(src="https://hhcdn.ru/file/17587246.png")
+	<!-- END FIRST-SCREEN -->
+
+	<!-- START MISSION -->
+	.section.section--medium-pt.mission#about 
+		.container 
+			.mission__text
+				p Hayot Bank — цифровой банк, основанный на современных финансовых услугах.
+			.mission__cards#mission 
+				.mission__card 
+					.mission__card-title Наша миссия
+					.mission__card-text 
+						p Предоставлять современные цифровые услуги и делать все для взаимного процветания клиентов, сотрудников, банка и общества в целом.
+				.mission__card 
+					.mission__card-title Стратегия
+					.mission__card-text 
+						p Стать ответственным партнёром, помогающим клиентам реализовывать свой потенциал, сосредоточиться на расширении бизнеса в ключевых сегментах рынка и повышении операционной эффективности.
+	<!-- END MISSION -->
+
+	<!-- START TABS -->
+	.section.section--medium-pt.tabs
+		.container
+			.tabs__cards 
+				.tab.tab--one
+					.tab-title Технологичность <br> <br>
+						.tab-btn
+					.tab-content
+						.tab-text 
+							p Мы непрерывно изучаем и внедряем передовые цифровые и технологичные банковские продукты и услуги.
+				.tab.tab--two
+					.tab-title Ценить каждого <br> клиента
+						.tab-btn
+					.tab-content
+						.tab-text 
+							p Мы стремимся создать удобные банковские продукты в первую очередь для клиентов, учитывая их мнение, и делать все, чтобы они остались довольны.
+				.tab.tab--three
+					.tab-title Работа в команде
+						.tab-btn
+					.tab-content
+						.tab-text 
+							p Мы достигаем общего результата вместе, работая в сплоченной команде и поддерживая коллектив.
+				.tab.tab--four
+					.tab-title Дух лидерства
+						.tab-btn
+					.tab-content
+						.tab-text 
+							p Мы нацелены стать лидером в предоставлении справедливых и прозрачных цифровых финансовых услуг.
+				.tab.tab--five
+					.tab-title Открытость <br> и коммуникация
+						.tab-btn
+					.tab-content
+						.tab-text 
+							p Мы повышаем прозрачность и эффективность работы, поддерживая открытые коммуникации и свободный обмен идеями.
+				.tab.tab--six
+					.tab-title Долгосрочное <br> сотрудничество
+						.tab-btn
+					.tab-content
+						.tab-text 
+							p Мы сосредоточены на долгосрочное сотрудничество, которое будет благоприятно влиять на достижение общих финансовых результатов и успеха наших клиентов.
+	<!-- END TABS -->
+
+	<!-- START SOCIAL -->
+	.section.section--medium-pt.social 
+		.container 
+			.social__inner 
+				.social__text 
+					p Знакомьтесь с нашими проектами, читайте блог и следите за активностями в социальных сетях:
+				.social__links 
+					a.social__inst(href="https://www.instagram.com/hayotbank_uz/" target="_blank") 
+						img(src="https://hhcdn.ru/ichameleon/307945.svg")
+					a.social__ln(href="https://www.linkedin.com/company/hayot-bank/" target="_blank") 
+						img(src="https://hhcdn.ru/ichameleon/307944.svg")
+					a.social__tg(href="https://t.me/hayotbank_uz" target="_blank") 
+						img(src="https://hhcdn.ru/ichameleon/307946.svg")
+					a.social__fb(href="https://www.facebook.com/profile.php?id=100090053345078" target="_blank") 
+						img(src="https://hhcdn.ru/ichameleon/307943.svg")
+	<!-- END SOCIAL -->
+
+	<!-- START VALUES -->
+	.section.section--long-pt.values 
+		.container
+			.title.title--mb-long За что нас ценят
+			.values__inner 
+				.values__card 
+					.values__card-img 
+						img(src="https://hhcdn.ru/ichameleon/307942.png")
+					.values__card-title Инновации
+					.values__card-text 
+						p Мы стремимся к инновациям, меняя мир и улучшая жизнь людей. Исследуем новые технологии и методы, обеспечивая продуктивный труд.
+				.values__card 
+					.values__card-img 
+						img(src="https://hhcdn.ru/ichameleon/307940.png")
+					.values__card-title Команда
+					.values__card-text 
+						p Мы гордимся профессиональной командой. Поддерживающий коллектив, ценящий индивидуальность каждого и способствующий развитию.
+				.values__card 
+					.values__card-img 
+						img(src="https://hhcdn.ru/ichameleon/307941.png")
+					.values__card-title Открытость
+					.values__card-text 
+						p У нас нет сложных иерархий. Поощряем идеи сотрудников, создавая доверительную среду для обмена информацией и обсуждения развития банка.
+	<!-- END VALUES -->
+
+	<!-- START COOL -->
+	.section.section--medium-pt.cool 
+		.container 
+			.title.title--mb-short Почему у нас круто
+			.cool__inner 
+				.cool__card 
+					.cool__card-content 
+						.cool__card-title Открытая и дружная атмосфера
+						.cool__card-text 
+							p Команда единомышленников, которая всегда поможет и поддержит.
+				.cool__card 
+					.cool__card-content 
+						.cool__card-title Возможности для развития
+						.cool__card-text 
+							p Прокачивать экспертизу можно как внутри своей специализации, так и в других направлениях.
+				.cool__card 
+					.cool__card-content 
+						.cool__card-title Поддержка
+						.cool__card-text 
+							p Обучаем всему, что нужно, а наставник поможет на первых этапах самостоятельной работы.
+				.cool__card 
+					.cool__card-content 
+						.cool__card-title Культура идей и экспериментов
+						.cool__card-text 
+							p Наша команда открыта новым идеям. Действуем свободно, принимаем решения и несем ответственность за результат.
+	<!-- END COOL -->
+
+	<!-- START DIRECTION -->
+	.section.section--medium-pt.direction#direct 
+		.container 
+			.title.title--mb-medium Выберайте своё направление
+			.direction__inner 
+				.direction__card 
+					.direction__card-title Работа в офисе
+					.direction__card-text 
+						p Финтех команда - состоящая из профессионалов различных областей: от IT до работы с клиентами. Выбирайте то, что вам близко и присоединяйтесь к команде!
+					.direction__card-img 
+						img(src="https://hhcdn.ru/ichameleon/307938.png")
+					.direction__card-btn.vacancy-btn Посмотреть
+				.direction__card 
+					.direction__card-title Работа в IT
+					.direction__card-text 
+						p Наша команда создаёт инновации в мире финансов и меняет будущее людей и бизнеса.
+					.direction__card-img 
+						img(src="https://hhcdn.ru/ichameleon/307937.png")
+					.direction__card-btn.vacancy-btn Посмотреть
+				.direction__card 
+					.direction__card-title Работа с клиентами
+					.direction__card-text 
+						p Обслуживаем физических и юридических лиц, каждый день встречая их с улыбкой. Присоединяйтесь к нам, если общение — это то, что вам особенно удается!
+					.direction__card-img 
+						img(src="https://hhcdn.ru/ichameleon/307939.png")
+					.direction__card-btn.vacancy-btn Посмотреть
+				.direction__card 
+					.direction__card-title Начало карьеры
+					.direction__card-text 
+						p Лёгкий старт и быстрый рост в команде, где создают инновационные финансовые сервисы.
+					.direction__card-img 
+						img(src="https://hhcdn.ru/ichameleon/307936.png")
+					.direction__card-btn.vacancy-btn Посмотреть
+	<!-- END DIRECTION -->
+
+	<!-- START ATMOSPHERE -->
+	.section.section--medium-pt.atmosphere 
+		.container 
+			.title.title--mb-short Комфортная атмосфера
+			.atmosphere__text 
+				p Удобный офис, в котором приятно работать, - не самое главное, что мы имеем в виду под комфортом. Главное – это продуктивные отношения с коллегами и руководством, команда, которая не подведет и всегда поддержит.
+			.swiper-container.atmosphere__slider 
+				.swiper-wrapper 
+					.swiper-slide
+						img(src="https://hhcdn.ru/ichameleon/307933.jpg")
+					.swiper-slide
+						img(src="https://hhcdn.ru/ichameleon/307934.jpg")
+					.swiper-slide
+						img(src="https://hhcdn.ru/ichameleon/307928.jpg")
+					.swiper-slide
+						img(src="https://hhcdn.ru/ichameleon/307930.jpg")
+					.swiper-slide
+						img(src="https://hhcdn.ru/ichameleon/307932.jpg")
+					.swiper-slide
+						img(src="https://hhcdn.ru/ichameleon/307931.jpg")
+					.swiper-slide
+						img(src="https://hhcdn.ru/ichameleon/307929.jpg")
+					.swiper-slide
+						img(src="https://hhcdn.ru/ichameleon/307935.jpg")
+				.atmosphere__slider-control
+					.atmosphere__slider-pagination
+					.atmosphere-progress__slider-pagination
+					.atmosphere-bg__slider-pagination
+					.slider-arrows.atmosphere__slider-arrows
+						.slider-arrow.slider-arrow--prev.atmosphere-slider-arrow-prev
+							+icon("arrow-left", "slider-arrow__icon")
+						.slider-arrow.slider-arrow--next.atmosphere-slider-arrow-next
+							+icon("arrow-right", "slider-arrow__icon")
+	<!-- END ATMOSPHERE -->
+
+	<!-- START JOIN-TEAM -->
+	.section.section--medium.join-team#join 
+		.container 
+			.title.title--mb-medium Как попасть к нам в команду
+			.join-team__text Всё очень просто!
+			.join-team__inner 
+				.join-team__card 
+					.join-team__card-title <span>01</span> Отклик
+					.join-team__card-text
+						p Выбирайте одну или несколько вакансий и откликайтесь, а также не забудьте прикрепить ссылки на github и портфолио.
+						p Мы внимательно рассмотрим все отклики и проведем первичный отбор, чтобы оценить соответствие кандидатов требованиям вакансии.
+				.join-team__card 
+					.join-team__card-title <span>02</span> Интервью
+					.join-team__card-text
+						p Обычно вас ожидают 3–4 личных или онлайн-встречи с нашими экспертами, в зависимости от уровня позиции.
+				.join-team__card 
+					.join-team__card-title <span>03</span> Решение
+					.join-team__card-text
+						p Мы возьмем небольшую паузу, чтобы принять решение и подготовить предложение о работе. Если мы подходим друг другу, мы обсудим финальные условия и отправим оффер.
+				.join-team__card 
+					.join-team__card-title <span>04</span> Оффер
+					.join-team__card-text
+						p После предложения о работе мы вернемся с деталями о процессе оформления, в первый рабочий день мы проведем вводное знакомство, расскажем о нашей культуре, офисе и познакомим вас с командой.
+	<!-- END JOIN-TEAM -->
